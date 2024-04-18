@@ -22,8 +22,8 @@
 // 3) Try "grouping" the three variables together and still output their values thereafter
 
 let course = {
-    name : "Web Deve lopment - The Complete Guide";,
-    price : 39;
+    name : "Web Deve lopment - The Complete Guide",
+    price : 39,
     goals : ["Learn Web Development", "Become a web developer", "Have fun!"]
 };
 
@@ -45,6 +45,10 @@ alert(course.goals[1]);
 
 function getListItem(array, arrayIndex) {
     let arrayElement = array[arrayIndex];
+    return arrayElement;
 }
 
 // 6) Execute your custom command from (5) and output ("alert") the result
+
+let firstGoal = getListItem(course.goals, 0);
+alert(firstGoal);
